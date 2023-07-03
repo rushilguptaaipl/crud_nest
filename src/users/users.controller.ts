@@ -19,4 +19,9 @@ create(@Body() createUserDto:CreateUserDto )
 findone(@Param('id') id:string){
     return this.usersService.findone(+id)
 }
+@Post(':id')
+deleteUser(@Param('id') id:string)
+{
+return this.usersService.deleteUser(+id)
+}
 }

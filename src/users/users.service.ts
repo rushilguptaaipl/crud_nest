@@ -22,4 +22,8 @@ export class UsersService {
   {
     return this.repo.findOneBy(id)
   }
+  deleteUser(id) 
+  {
+    return this.repo.delete(id);
+  }
 }
